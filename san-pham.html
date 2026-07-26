@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thư Viện Sản Phẩm Đá Lắp Đặt Thực Tế | Xưởng đá Ngọc Cẩn</title>
+  <meta name="description" content="Hình ảnh thực tế các sản phẩm đá mặt bếp, lavabo, cầu thang, ngạch cửa thềm được xưởng đá Ngọc Cẩn gia công tỉ mỉ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="hero hero-subpage" style="padding: 60px 0 80px;">
+      <div class="hero-bg">
+        <img src="images/about_finished.webp" alt="Thư viện sản phẩm hoàn thiện" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <span class="eyebrow eyebrow-dark">Thư viện công trình</span>
+        <h1>Ảnh sản phẩm gia công hoàn thiện</h1>
+        <p class="hero-desc">Tuyển tập hình ảnh thực tế các hạng mục ốp lát đá granite, marble sắc nét do thợ xưởng đá Ngọc Cẩn lắp đặt.</p>
+      </div>
+    </section>
+
+    <!-- Thư Viện Tương Tác -->
+    <section class="section section-white">
+      <div class="container">
+        <!-- Các nút lọc danh mục -->
+        <div class="gallery-filters">
+          <button type="button" class="filter-btn active" data-filter="all">Tất cả sản phẩm</button>
+          <button type="button" class="filter-btn" data-filter="kitchen">Mặt bếp</button>
+          <button type="button" class="filter-btn" data-filter="lavabo">Lavabo</button>
+          <button type="button" class="filter-btn" data-filter="stairs">Cầu thang / Ngạch</button>
+          <button type="button" class="filter-btn" data-filter="furniture">Bàn ghế & Trang trí</button>
+        </div>
+
+        <!-- Lưới ảnh sản phẩm -->
+        <div class="grid grid-3 gallery-grid" id="galleryGrid">
+          <button type="button" class="gallery-item" data-category="kitchen" data-src="images/kitchen.webp" data-label="Mặt bếp đá granite">
+            <div class="img-wrap aspect-square">
+              <img src="images/kitchen.webp" alt="Mặt bếp đá granite" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Mặt bếp đá granite</span>
+          </button>
+
+          <button type="button" class="gallery-item" data-category="lavabo" data-src="images/lavabo.webp" data-label="Lavabo đá marble tự nhiên">
+            <div class="img-wrap aspect-square">
+              <img src="images/lavabo.webp" alt="Lavabo đá marble" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Lavabo đá</span>
+          </button>
+
+          <button type="button" class="gallery-item" data-category="stairs" data-src="images/threshold.webp" data-label="Ngạch thềm cửa đá granite đen bóng">
+            <div class="img-wrap aspect-square">
+              <img src="images/threshold.webp" alt="Ngạch cửa đá" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Ngạch cửa đá</span>
+          </button>
+
+          <button type="button" class="gallery-item" data-category="stairs" data-src="images/stairs.webp" data-label="Cầu thang ốp đá cẩm thạch trắng vân xám">
+            <div class="img-wrap aspect-square">
+              <img src="images/stairs.webp" alt="Ốp cầu thang đá" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Ốp cầu thang đá</span>
+          </button>
+
+          <button type="button" class="gallery-item" data-category="furniture" data-src="images/furniture.webp" data-label="Bàn trà sofa tròn mặt đá marble">
+            <div class="img-wrap aspect-square">
+              <img src="images/furniture.webp" alt="Bàn ghế đá" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Bàn ghế đá</span>
+          </button>
+
+          <button type="button" class="gallery-item" data-category="furniture" data-src="images/custom.webp" data-label="Sản phẩm đá ghép tấm nghệ thuật nghệ thuật">
+            <div class="img-wrap aspect-square">
+              <img src="images/custom.webp" alt="Sản phẩm đá hoàn thiện nghệ thuật" loading="lazy" />
+            </div>
+            <span class="gallery-caption">Sản phẩm hoàn thiện nghệ thuật</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- LIGHTBOX (chỉ cần thiết cho trang sản phẩm) -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Đóng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
