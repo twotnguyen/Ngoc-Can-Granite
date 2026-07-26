@@ -1,27 +1,38 @@
 (function () {
   "use strict";
 
-  // ----- Năm hiện tại ở footer -----
-  var yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+  document.addEventListener("DOMContentLoaded", function () {
+    initMobileMenu();
+    highlightActiveLink();
+    initHeaderScroll();
+    initYear();
+  });
+
+  // ----- Dynamic Year in Footer -----
+  function initYear() {
+    var yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
   }
 
-  // ----- Menu mobile -----
-  var menuToggle = document.getElementById("menuToggle");
-  var mobileMenu = document.getElementById("mobileMenu");
+  // ----- Logic Mobile Menu -----
+  function initMobileMenu() {
+    var menuToggle = document.getElementById("menuToggle");
+    var mobileMenu = document.getElementById("mobileMenu");
 
-  function closeMenu() {
-    mobileMenu.hidden = true;
-    menuToggle.setAttribute("aria-expanded", "false");
-  }
+    if (!menuToggle || !mobileMenu) return;
 
-  function openMenu() {
-    mobileMenu.hidden = false;
-    menuToggle.setAttribute("aria-expanded", "true");
-  }
+    function closeMenu() {
+      mobileMenu.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
 
-  if (menuToggle && mobileMenu) {
+    function openMenu() {
+      mobileMenu.hidden = false;
+      menuToggle.setAttribute("aria-expanded", "true");
+    }
+
     menuToggle.addEventListener("click", function () {
       if (mobileMenu.hidden) {
         openMenu();
@@ -33,60 +44,39 @@
     mobileMenu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", closeMenu);
     });
-  }
 
-  // ----- Lightbox thư viện ảnh -----
-  var lightbox = document.getElementById("lightbox");
-  var lightboxImg = document.getElementById("lightboxImg");
-  var lightboxCaption = document.getElementById("lightboxCaption");
-  var lightboxClose = document.getElementById("lightboxClose");
-  var galleryItems = document.querySelectorAll(".gallery-item");
-
-  function openLightbox(src, label) {
-    lightboxImg.src = src;
-    lightboxImg.alt = label;
-    lightboxCaption.textContent = label;
-    lightbox.hidden = false;
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeLightbox() {
-    lightbox.hidden = true;
-    lightboxImg.src = "";
-    lightboxImg.alt = "";
-    document.body.style.overflow = "";
-  }
-
-  galleryItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-      var src = item.getAttribute("data-src") || "";
-      var label = item.getAttribute("data-label") || "";
-      openLightbox(src, label);
-    });
-  });
-
-  if (lightboxClose) {
-    lightboxClose.addEventListener("click", closeLightbox);
-  }
-
-  if (lightbox) {
-    lightbox.addEventListener("click", function (event) {
-      if (event.target === lightbox) {
-        closeLightbox();
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !mobileMenu.hidden) {
+        closeMenu();
       }
     });
   }
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      if (!lightbox.hidden) closeLightbox();
-      if (!mobileMenu.hidden) closeMenu();
-    }
-  });
+  // ----- Đánh dấu trang hiện tại -----
+  function highlightActiveLink() {
+    var path = window.location.pathname;
+    var pageName = path.split("/").pop() || "index.html";
 
-  // ----- Hiệu ứng cuộn trang của Header (Glassmorphism co lại) -----
-  var header = document.querySelector(".site-header");
-  if (header) {
+    if (pageName === "" || pageName.startsWith("#")) {
+      pageName = "index.html";
+    }
+
+    // Nếu đã có class active sẵn trong HTML tĩnh, giữ nguyên
+    var existingActive = document.querySelector(".nav-desktop a.active");
+    if (existingActive) return;
+
+    var selector = 'a[href="' + pageName + '"]';
+    var activeLinks = document.querySelectorAll(selector);
+    activeLinks.forEach(function (link) {
+      link.classList.add("active");
+    });
+  }
+
+  // ----- Hiệu ứng cuộn thu nhỏ Header -----
+  function initHeaderScroll() {
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+
     var ticking = false;
     window.addEventListener("scroll", function () {
       if (!ticking) {

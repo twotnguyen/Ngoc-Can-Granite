@@ -814,3 +814,154 @@ h2 {
   font-size: 12px;
   color: var(--stone-600);
 }
+
+/* =========================================================
+   Multi-page CSS additions
+   ========================================================= */
+
+/* Menu Link Active State */
+.nav-desktop a.active {
+  color: var(--amber-500) !important;
+  font-weight: 700;
+}
+.mobile-menu nav a.active {
+  background: var(--stone-900);
+  color: var(--amber-500);
+  font-weight: 700;
+}
+
+/* Subpage Hero */
+.hero-subpage {
+  position: relative;
+  padding: 60px 0 80px;
+  background: var(--stone-950);
+}
+
+/* Quy Trình 5 Bước - Dịch Vụ */
+.workflow-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .workflow-steps {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.workflow-step {
+  background: var(--white);
+  padding: 30px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--stone-200);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.workflow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.step-number {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--amber-500);
+  opacity: 0.8;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.workflow-step h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--stone-900);
+  margin: 0 0 10px 0;
+}
+.workflow-step p {
+  font-size: 13px;
+  color: var(--stone-600);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bộ lọc ảnh - Sản Phẩm */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--stone-300);
+  color: var(--stone-700);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--amber-500);
+  color: var(--stone-950);
+  border-color: var(--amber-500);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+}
+.gallery-item {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.gallery-item.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chi Tiết Loại Đá - Grid */
+@media (min-width: 768px) {
+  .stone-details-list .stone-detail-item {
+    grid-template-columns: 1fr 1.2fr !important;
+    gap: 50px !important;
+  }
+  .stone-details-list .stone-detail-item:nth-child(even) > div:first-child {
+    order: 2;
+  }
+}
+
+/* Bảng So Sánh Kỹ Thuật - Loại Đá */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--stone-200);
+  margin-top: 30px;
+  font-size: 14px;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--stone-200);
+}
+.comparison-table th {
+  background: var(--stone-900);
+  color: var(--white);
+  font-weight: 700;
+}
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+.comparison-table tr:nth-child(even) {
+  background: var(--stone-50);
+}
+.comparison-table td strong {
+  color: var(--stone-900);
+}
