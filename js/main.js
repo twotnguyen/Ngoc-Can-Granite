@@ -83,4 +83,23 @@
       if (!mobileMenu.hidden) closeMenu();
     }
   });
+
+  // ----- Hiệu ứng cuộn trang của Header (Glassmorphism co lại) -----
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
 })();
