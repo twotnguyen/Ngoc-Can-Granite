@@ -85,7 +85,7 @@
     <!-- HERO -->
     <section id="top" class="hero">
       <div class="hero-bg">
-        <div class="placeholder-img" data-label="Ảnh xưởng / sản phẩm đá granite"></div>
+        <img src="images/hero_bg.webp" alt="Không gian trưng bày đá Granite Ngọc Cẩn" class="hero-img" />
         <div class="hero-overlay"></div>
       </div>
 
@@ -192,9 +192,15 @@
         </div>
 
         <div class="about-images">
-          <div class="placeholder-img about-img-main" data-label="Ảnh xưởng sản xuất"></div>
-          <div class="placeholder-img" data-label="Ảnh gia công đá"></div>
-          <div class="placeholder-img" data-label="Ảnh thành phẩm"></div>
+          <div class="img-wrap about-img-main">
+            <img src="images/about_factory.webp" alt="Xưởng gia công đá Ngọc Cẩn" loading="lazy" />
+          </div>
+          <div class="img-wrap">
+            <img src="images/about_processing.webp" alt="Thợ gia công đá thủ công chuyên nghiệp" loading="lazy" />
+          </div>
+          <div class="img-wrap">
+            <img src="images/about_finished.webp" alt="Công trình ốp đá hoàn thiện" loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
@@ -215,42 +221,54 @@
 
         <div class="grid grid-3 service-grid">
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Mặt bếp đá granite" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/kitchen.webp" alt="Mặt bếp đá granite" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Mặt bếp đá granite</h3>
               <p>Gia công, cắt và lắp đặt mặt bếp theo kích thước bếp thực tế.</p>
             </div>
           </article>
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Lavabo đá" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/lavabo.webp" alt="Lavabo đá" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Lavabo đá</h3>
               <p>Khoét lỗ, mài cạnh, gia công lavabo đá theo bản vẽ hoặc mẫu có sẵn.</p>
             </div>
           </article>
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Ngạch cửa, bậc thềm" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/threshold.webp" alt="Ngạch cửa, bậc thềm" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Ngạch cửa, bậc thềm</h3>
               <p>Cắt, mài cạnh ngạch cửa, bậc thềm đúng kích thước công trình.</p>
             </div>
           </article>
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Ốp lát, ốp cầu thang" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/stairs.webp" alt="Ốp lát, ốp cầu thang" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Ốp lát, ốp cầu thang</h3>
               <p>Gia công đá ốp tường, ốp bậc cầu thang, ốp mặt tiền theo yêu cầu.</p>
             </div>
           </article>
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Bàn, ghế đá trang trí" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/furniture.webp" alt="Bàn, ghế đá trang trí" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Bàn, ghế đá trang trí</h3>
               <p>Gia công bàn ghế đá, bàn trà, kệ trang trí theo mẫu thiết kế.</p>
             </div>
           </article>
           <article class="card">
-            <div class="placeholder-img card-img" data-label="Gia công theo yêu cầu" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/custom.webp" alt="Gia công theo yêu cầu" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Gia công theo yêu cầu</h3>
               <p>
@@ -285,28 +303,40 @@
         </div>
 
         <div class="grid grid-3 gallery-grid" id="galleryGrid">
-          <button type="button" class="gallery-item" data-label="Mặt bếp đá granite">
-            <div class="placeholder-img" data-label="Mặt bếp đá granite"></div>
+          <button type="button" class="gallery-item" data-src="images/kitchen.webp" data-label="Mặt bếp đá granite">
+            <div class="img-wrap aspect-square">
+              <img src="images/kitchen.webp" alt="Mặt bếp đá granite" loading="lazy" />
+            </div>
             <span class="gallery-caption">Mặt bếp đá granite</span>
           </button>
-          <button type="button" class="gallery-item" data-label="Lavabo đá">
-            <div class="placeholder-img" data-label="Lavabo đá"></div>
+          <button type="button" class="gallery-item" data-src="images/lavabo.webp" data-label="Lavabo đá">
+            <div class="img-wrap aspect-square">
+              <img src="images/lavabo.webp" alt="Lavabo đá" loading="lazy" />
+            </div>
             <span class="gallery-caption">Lavabo đá</span>
           </button>
-          <button type="button" class="gallery-item" data-label="Ngạch cửa đá">
-            <div class="placeholder-img" data-label="Ngạch cửa đá"></div>
+          <button type="button" class="gallery-item" data-src="images/threshold.webp" data-label="Ngạch cửa đá">
+            <div class="img-wrap aspect-square">
+              <img src="images/threshold.webp" alt="Ngạch cửa đá" loading="lazy" />
+            </div>
             <span class="gallery-caption">Ngạch cửa đá</span>
           </button>
-          <button type="button" class="gallery-item" data-label="Ốp cầu thang đá">
-            <div class="placeholder-img" data-label="Ốp cầu thang đá"></div>
+          <button type="button" class="gallery-item" data-src="images/stairs.webp" data-label="Ốp cầu thang đá">
+            <div class="img-wrap aspect-square">
+              <img src="images/stairs.webp" alt="Ốp cầu thang đá" loading="lazy" />
+            </div>
             <span class="gallery-caption">Ốp cầu thang đá</span>
           </button>
-          <button type="button" class="gallery-item" data-label="Bàn ghế đá">
-            <div class="placeholder-img" data-label="Bàn ghế đá"></div>
+          <button type="button" class="gallery-item" data-src="images/furniture.webp" data-label="Bàn ghế đá">
+            <div class="img-wrap aspect-square">
+              <img src="images/furniture.webp" alt="Bàn ghế đá" loading="lazy" />
+            </div>
             <span class="gallery-caption">Bàn ghế đá</span>
           </button>
-          <button type="button" class="gallery-item" data-label="Sản phẩm hoàn thiện">
-            <div class="placeholder-img" data-label="Sản phẩm hoàn thiện"></div>
+          <button type="button" class="gallery-item" data-src="images/about_finished.webp" data-label="Sản phẩm hoàn thiện">
+            <div class="img-wrap aspect-square">
+              <img src="images/about_finished.webp" alt="Sản phẩm hoàn thiện" loading="lazy" />
+            </div>
             <span class="gallery-caption">Sản phẩm hoàn thiện</span>
           </button>
         </div>
@@ -328,7 +358,9 @@
 
         <div class="grid grid-3 stone-grid">
           <article class="card card-dark">
-            <div class="placeholder-img card-img" data-label="Đá granite tự nhiên" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/stone_natural.webp" alt="Đá granite tự nhiên" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Đá granite tự nhiên</h3>
               <p>
@@ -345,7 +377,9 @@
             </div>
           </article>
           <article class="card card-dark">
-            <div class="placeholder-img card-img" data-label="Đá granite nhân tạo" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/stone_artificial.webp" alt="Đá granite nhân tạo" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Đá granite nhân tạo</h3>
               <p>Bề mặt đồng đều, đa dạng màu sắc, dễ thi công.</p>
@@ -359,7 +393,9 @@
             </div>
           </article>
           <article class="card card-dark">
-            <div class="placeholder-img card-img" data-label="Đá marble (cẩm thạch)" data-compact></div>
+            <div class="img-wrap card-img">
+              <img src="images/stone_marble.webp" alt="Đá marble (cẩm thạch)" loading="lazy" />
+            </div>
             <div class="card-body">
               <h3>Đá marble (cẩm thạch)</h3>
               <p>
@@ -504,7 +540,7 @@
           <path d="M6 6l12 12M18 6L6 18" />
         </svg>
       </button>
-      <div class="placeholder-img lightbox-img" id="lightboxImg"></div>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
       <p class="lightbox-caption" id="lightboxCaption"></p>
     </div>
   </div>
