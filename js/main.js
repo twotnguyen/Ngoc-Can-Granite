@@ -42,8 +42,9 @@
   var lightboxClose = document.getElementById("lightboxClose");
   var galleryItems = document.querySelectorAll(".gallery-item");
 
-  function openLightbox(label) {
-    lightboxImg.setAttribute("data-label", label);
+  function openLightbox(src, label) {
+    lightboxImg.src = src;
+    lightboxImg.alt = label;
     lightboxCaption.textContent = label;
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
@@ -51,12 +52,16 @@
 
   function closeLightbox() {
     lightbox.hidden = true;
+    lightboxImg.src = "";
+    lightboxImg.alt = "";
     document.body.style.overflow = "";
   }
 
   galleryItems.forEach(function (item) {
     item.addEventListener("click", function () {
-      openLightbox(item.getAttribute("data-label") || "");
+      var src = item.getAttribute("data-src") || "";
+      var label = item.getAttribute("data-label") || "";
+      openLightbox(src, label);
     });
   });
 
