@@ -88,9 +88,18 @@ button {
   font-weight: 600;
   font-size: 14px;
   border: 1px solid transparent;
-  transition: background-color 0.15s ease, color 0.15s ease,
-    border-color 0.15s ease;
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn-primary {
@@ -99,6 +108,7 @@ button {
 }
 .btn-primary:hover {
   background: var(--amber-400);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
 }
 
 .btn-outline-light {
@@ -108,6 +118,7 @@ button {
 .btn-outline-light:hover {
   border-color: var(--amber-500);
   color: var(--amber-400);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.05);
 }
 
 .btn-link {
@@ -134,16 +145,30 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(12, 10, 9, 0.95);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(12, 10, 9, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-inner {
-  height: 64px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Scrolled state */
+.site-header.scrolled {
+  background: rgba(12, 10, 9, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.site-header.scrolled .header-inner {
+  height: 60px;
 }
 
 .brand {
@@ -504,10 +529,14 @@ h2 {
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   border: 1px solid var(--stone-200);
-  transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 .card-img {
   aspect-ratio: 4 / 3;
@@ -530,6 +559,13 @@ h2 {
 .card-dark {
   background: var(--stone-900);
   border-color: var(--stone-800);
+  transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-dark:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 .card-dark h3 {
   color: var(--white);
@@ -653,10 +689,14 @@ h2 {
   padding: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   border: 1px solid var(--stone-200);
-  transition: box-shadow 0.15s ease;
+  transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .contact-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 .contact-card-static {
   cursor: default;
