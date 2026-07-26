@@ -63,69 +63,7 @@
   </script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand">
-        <span class="brand-name">Xưởng đá Ngọc Cẩn</span>
-        <span class="brand-sub">NGOCCAN Granite</span>
-      </a>
-
-      <nav class="nav-desktop" aria-label="Điều hướng chính">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#dich-vu">Dịch vụ</a>
-        <a href="#san-pham">Sản phẩm</a>
-        <a href="#loai-da">Loại đá</a>
-        <a href="#lien-he">Liên hệ</a>
-      </nav>
-
-      <div class="header-cta">
-        <a href="tel:0905035789" class="btn btn-outline-light">0905 035 789</a>
-        <a
-          href="https://zalo.me/0905035789"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary"
-          >Chat Zalo</a
-        >
-      </div>
-
-      <button
-        type="button"
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Mở menu"
-        aria-expanded="false"
-        aria-controls="mobileMenu"
-      >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M4 7h16M4 12h16M4 17h16" />
-        </svg>
-      </button>
-    </div>
-
-    <div class="mobile-menu" id="mobileMenu" hidden>
-      <nav aria-label="Điều hướng di động">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#dich-vu">Dịch vụ</a>
-        <a href="#san-pham">Sản phẩm</a>
-        <a href="#loai-da">Loại đá</a>
-        <a href="#lien-he">Liên hệ</a>
-      </nav>
-      <div class="mobile-menu-cta">
-        <a href="tel:0905035789" class="btn btn-outline-light block"
-          >Gọi 0905 035 789</a
-        >
-        <a
-          href="https://zalo.me/0905035789"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary block"
-          >Chat Zalo</a
-        >
-      </div>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
   <main>
     <!-- HERO -->
@@ -293,36 +231,10 @@
               <p>Cắt, mài cạnh ngạch cửa, bậc thềm đúng kích thước công trình.</p>
             </div>
           </article>
-          <article class="card">
-            <div class="img-wrap card-img">
-              <img src="images/stairs.webp" alt="Ốp lát, ốp cầu thang" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <h3>Ốp lát, ốp cầu thang</h3>
-              <p>Gia công đá ốp tường, ốp bậc cầu thang, ốp mặt tiền theo yêu cầu.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="img-wrap card-img">
-              <img src="images/furniture.webp" alt="Bàn, ghế đá trang trí" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <h3>Bàn, ghế đá trang trí</h3>
-              <p>Gia công bàn ghế đá, bàn trà, kệ trang trí theo mẫu thiết kế.</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="img-wrap card-img">
-              <img src="images/custom.webp" alt="Gia công theo yêu cầu" loading="lazy" />
-            </div>
-            <div class="card-body">
-              <h3>Gia công theo yêu cầu</h3>
-              <p>
-                Nhận gia công các sản phẩm đá khác theo bản vẽ và kích thước
-                riêng của khách.
-              </p>
-            </div>
-          </article>
+        </div>
+
+        <div class="section-actions text-center" style="margin-top: 40px; text-align: center;">
+          <a href="dich-vu.html" class="btn btn-primary btn-lg">Xem tất cả dịch vụ & quy trình →</a>
         </div>
 
         <p class="section-note">
@@ -343,48 +255,33 @@
           <span class="eyebrow">Sản phẩm</span>
           <h2>Thư viện ảnh sản phẩm</h2>
           <p>
-            Một số hình ảnh minh họa cho các sản phẩm mà xưởng gia công. Ảnh
-            thật sẽ được cập nhật sớm.
+            Hình ảnh một số công trình tiêu biểu của xưởng.
           </p>
         </div>
 
         <div class="grid grid-3 gallery-grid" id="galleryGrid">
-          <button type="button" class="gallery-item" data-src="images/kitchen.webp" data-label="Mặt bếp đá granite">
+          <div class="gallery-item">
             <div class="img-wrap aspect-square">
               <img src="images/kitchen.webp" alt="Mặt bếp đá granite" loading="lazy" />
             </div>
             <span class="gallery-caption">Mặt bếp đá granite</span>
-          </button>
-          <button type="button" class="gallery-item" data-src="images/lavabo.webp" data-label="Lavabo đá">
+          </div>
+          <div class="gallery-item">
             <div class="img-wrap aspect-square">
               <img src="images/lavabo.webp" alt="Lavabo đá" loading="lazy" />
             </div>
             <span class="gallery-caption">Lavabo đá</span>
-          </button>
-          <button type="button" class="gallery-item" data-src="images/threshold.webp" data-label="Ngạch cửa đá">
+          </div>
+          <div class="gallery-item">
             <div class="img-wrap aspect-square">
               <img src="images/threshold.webp" alt="Ngạch cửa đá" loading="lazy" />
             </div>
             <span class="gallery-caption">Ngạch cửa đá</span>
-          </button>
-          <button type="button" class="gallery-item" data-src="images/stairs.webp" data-label="Ốp cầu thang đá">
-            <div class="img-wrap aspect-square">
-              <img src="images/stairs.webp" alt="Ốp cầu thang đá" loading="lazy" />
-            </div>
-            <span class="gallery-caption">Ốp cầu thang đá</span>
-          </button>
-          <button type="button" class="gallery-item" data-src="images/furniture.webp" data-label="Bàn ghế đá">
-            <div class="img-wrap aspect-square">
-              <img src="images/furniture.webp" alt="Bàn ghế đá" loading="lazy" />
-            </div>
-            <span class="gallery-caption">Bàn ghế đá</span>
-          </button>
-          <button type="button" class="gallery-item" data-src="images/about_finished.webp" data-label="Sản phẩm hoàn thiện">
-            <div class="img-wrap aspect-square">
-              <img src="images/about_finished.webp" alt="Sản phẩm hoàn thiện" loading="lazy" />
-            </div>
-            <span class="gallery-caption">Sản phẩm hoàn thiện</span>
-          </button>
+          </div>
+        </div>
+
+        <div class="section-actions text-center" style="margin-top: 40px; text-align: center;">
+          <a href="san-pham.html" class="btn btn-primary btn-lg">Xem thư viện sản phẩm đầy đủ (Lightbox) →</a>
         </div>
       </div>
     </section>
@@ -457,6 +354,10 @@
               >
             </div>
           </article>
+        </div>
+
+        <div class="section-actions text-center" style="margin-top: 40px; text-align: center;">
+          <a href="loai-da.html" class="btn btn-primary btn-lg">Tìm hiểu chi tiết & bảng so sánh đá →</a>
         </div>
       </div>
     </section>
@@ -569,46 +470,7 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <p class="footer-name">Xưởng đá Ngọc Cẩn</p>
-        <p class="footer-brand">NGOCCAN Granite</p>
-        <p class="footer-address">
-          93/17 Đường Nguyễn Thị Tú, Bình Tân, Hồ Chí Minh, Việt Nam
-        </p>
-      </div>
-      <div class="footer-links">
-        <a href="tel:0905035789">0905 035 789</a>
-        <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer">Zalo</a>
-        <a href="https://www.facebook.com/profile.php?id=61575612324085" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a
-          href="https://maps.app.goo.gl/am6ZZ63BUA5D7sE89"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Google Maps</a
-        >
-      </div>
-    </div>
-    <p class="footer-copy">
-      © <span id="year"></span> Xưởng đá Ngọc Cẩn. Trang giới thiệu doanh
-      nghiệp — nội dung mẫu sẽ được cập nhật theo dữ liệu thật.
-    </p>
-  </footer>
-
-  <!-- LIGHTBOX (thư viện ảnh) -->
-  <div class="lightbox" id="lightbox" hidden>
-    <div class="lightbox-inner">
-      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Đóng">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 6l12 12M18 6L6 18" />
-        </svg>
-      </button>
-      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
-      <p class="lightbox-caption" id="lightboxCaption"></p>
-    </div>
-  </div>
+  <div id="footer-placeholder"></div>
 
   <script src="js/main.js"></script>
 </body>
