@@ -97,7 +97,7 @@
   // ----- Bộ lọc loại đá động -----
   function initStoneFilter() {
     var filterButtons = document.querySelectorAll(".stone-filter-btn");
-    var stoneItems = document.querySelectorAll(".stone-detail-item");
+    var stoneItems = document.querySelectorAll(".stone-product-card");
 
     if (!filterButtons.length || !stoneItems.length) return;
 
@@ -112,13 +112,21 @@
 
         stoneItems.forEach(function (item) {
           if (filterValue === "all") {
-            item.classList.remove("stone-detail-item-hidden");
+            item.classList.remove("hide");
+            item.style.opacity = "0";
+            setTimeout(function () {
+              item.style.opacity = "1";
+            }, 20);
           } else {
             var itemGroup = item.getAttribute("data-group");
             if (itemGroup === filterValue) {
-              item.classList.remove("stone-detail-item-hidden");
+              item.classList.remove("hide");
+              item.style.opacity = "0";
+              setTimeout(function () {
+                item.style.opacity = "1";
+              }, 20);
             } else {
-              item.classList.add("stone-detail-item-hidden");
+              item.classList.add("hide");
             }
           }
         });
