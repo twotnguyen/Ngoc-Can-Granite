@@ -1,43 +1,52 @@
-# Xưởng đá Ngọc Cẩn — NGOCCAN Granite (Landing Page)
+# Xưởng đá Ngọc Cẩn — NGOCCAN Granite (Website Đa Trang)
 
-Trang web giới thiệu dịch vụ (Landing Page) chính thức của **Xưởng đá Ngọc Cẩn (NGOCCAN Granite)** tại Bình Tân, TP. Hồ Chí Minh. Dự án được tối ưu hóa cho mục đích giới thiệu sản phẩm, dịch vụ gia công đá granite/marble và thúc đẩy kết nối trực tiếp của khách hàng qua Hotline & Zalo.
+Website giới thiệu dịch vụ gia công đá, thi công ốp lát và catalog mẫu sản phẩm chính thức của **Xưởng đá Ngọc Cẩn (NGOCCAN Granite)** tại Bình Tân, TP. Hồ Chí Minh. Dự án đã được chuyển đổi từ một trang đơn (Landing Page) thành một website đa trang (Multi-page) hoàn chỉnh để tối ưu hóa trải nghiệm khách hàng và tối đa hóa hiệu quả SEO.
 
 ---
 
 ## 🌟 Tính Năng Nổi Bật
-* **Thiết kế Premium & Responsive:** Tối ưu hóa hiển thị trên tất cả thiết bị di động, máy tính bảng và máy tính để bàn.
-* **Tối ưu hóa Tỷ lệ Chuyển đổi (CRO):** Tích hợp các nút kêu gọi hành động (CTA) gọi điện trực tiếp, nhắn tin Zalo nhanh chóng ở cả header và các phần nội dung.
-* **Trải nghiệm Trực quan:** Hỗ trợ Lightbox xem ảnh sản phẩm chi tiết mà không cần tải lại trang.
-* **Bản đồ Tích hợp:** Nhúng bản đồ Google Maps chỉ đường trực tiếp tới vị trí xưởng tại số 93/17 Nguyễn Thị Tú, Bình Tân, TP. HCM.
-* **Tối ưu SEO:** Sử dụng cấu trúc thẻ ngữ nghĩa (Semantic HTML5), tối ưu từ khóa dịch vụ gia công đá.
+
+* **Kiến Trúc Đa Trang (Multi-page Layout):** Phân mảnh thông tin rõ ràng thành các trang độc lập: Trang chủ, Dịch vụ, Loại đá và Thư viện công trình.
+* **Lưới Sản Phẩm Mẫu Đá (Shop Grid Catalog):** Trang *Loại đá* được thiết kế lại theo dạng lưới sản phẩm đồng bộ (style WooCommerce shop) trưng bày 23 dòng đá cụ thể (Granite, Marble, Quartzite, Nung kết, Trắng sứ...) với nhãn xuất xứ và liên kết báo giá qua Zalo.
+* **Bộ Lọc Động Mượt Mà (Dynamic Filtering):** Khách hàng có thể chuyển đổi nhanh giữa các nhóm đá (Đá tự nhiên, Đá nhân tạo, Vật liệu giả đá) bằng các Tab lọc động sử dụng hiệu ứng chuyển đổi mờ (`opacity`) mượt mà của Vanilla JS.
+* **9 Dịch Vụ Gia Công Chuyên Sâu:** Trang *Dịch vụ* liệt kê chi tiết các dịch vụ kỹ thuật cao như Mặt bếp, Cầu thang, Mặt tiền, Lavabo đúc liền khối, Gia công CNC, Chống thấm phục hồi, Cột phào chỉ cổ điển...
+* **Tối ưu hóa Tỷ lệ Chuyển đổi (CRO):** Tích hợp Widget liên hệ nổi (Zalo + Phone) cố định ở góc dưới màn hình, cùng các Banner CTA lớn kết nối chat Zalo nhanh.
+* **Bảo vệ Từ khóa SEO:** Chuyển đổi các bài viết mô tả chi tiết của 9 nhóm đá cũ thành dạng Accordion đóng mở dưới chân trang Loại đá giúp duy trì mật độ từ khóa SEO mà không gây loãng giao diện cửa hàng tối giản.
 
 ---
 
 ## 🛠️ Công Nghệ Sử Dụng
-* **HTML5:** Cấu trúc trang web chuẩn SEO.
+
+* **HTML5:** Cấu trúc trang web chuẩn SEO Semantic.
 * **Vanilla CSS3:** Thiết kế giao diện hiện đại với hệ màu Stone & Amber, biến CSS variables linh hoạt, hiệu ứng chuyển động mượt mà.
-* **Vanilla JavaScript (ES6):** Xử lý logic đóng/mở Mobile Menu, Lightbox ảnh và tự động cập nhật năm ở Footer.
+* **Vanilla JavaScript (ES5/ES6):** Xử lý logic đóng/mở Mobile Menu, lọc động thẻ sản phẩm đá, hiệu ứng chuyển cảnh mờ và cập nhật năm tự động ở Footer.
 
 ---
 
 ## 📁 Cấu Trúc Thư Mục
+
 ```text
 Ngoc-Can-Granite/
 ├── css/
-│   └── styles.css      # Toàn bộ mã nguồn CSS giao diện
+│   └── styles.css          # Toàn bộ mã nguồn CSS giao diện & Responsive
 ├── js/
-│   └── main.js         # Logic tương tác (Menu, Lightbox, Footer)
-├── index.html          # Trang Landing Page chính
-└── README.md           # Tài liệu giới thiệu dự án
+│   └── main.js             # Logic lọc động, Menu mobile, Lightbox, widget nổi
+├── images/                 # Thư mục chứa hình ảnh sản phẩm & dịch vụ AI
+├── index.html              # Trang chủ (Giới thiệu & Tổng quan năng lực)
+├── dich-vu.html            # Trang trưng bày 9 dịch vụ gia công đá
+├── loai-da.html            # Trang lưới sản phẩm (23 mẫu đá con & bộ lọc tab)
+├── san-pham.html           # Thư viện ảnh thực tế công trình hoàn thiện
+└── README.md               # Tài liệu giới thiệu dự án
 ```
 
 ---
 
 ## 🚀 Hướng Dẫn Chạy Dưới Local
+
 Dự án được viết hoàn toàn bằng HTML/CSS/JS thuần, không cần build hoặc cài đặt thư viện phức tạp. Bạn có thể chạy trang web theo các cách sau:
 
 ### Cách 1: Mở trực tiếp
-Nhấp đúp chuột vào file `index.html` để mở trang web bằng trình duyệt bất kỳ.
+Mở trực tiếp tệp `index.html` bằng trình duyệt bất kỳ.
 
 ### Cách 2: Sử dụng Live Server (VS Code)
 1. Cài đặt extension **Live Server** trên VS Code.
@@ -46,5 +55,7 @@ Nhấp đúp chuột vào file `index.html` để mở trang web bằng trình d
 ---
 
 ## 📧 Thông Tin Liên Hệ
+
 * **Hotline/Zalo:** 0905 035 789
 * **Địa chỉ xưởng:** 93/17 Đường Nguyễn Thị Tú, Bình Tân, Hồ Chí Minh, Việt Nam.
+* **Facebook:** [Kho Đá Ngọc Cẩn](https://www.facebook.com/profile.php?id=61575612324085)
