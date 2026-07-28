@@ -1009,3 +1009,174 @@ h2 {
 .comparison-table td strong {
   color: var(--stone-900);
 }
+
+/* Fix section heading alignment */
+.section-heading.text-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section-heading.text-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sticky first column for tables on mobile */
+@media (max-width: 767px) {
+  .comparison-table th:first-child,
+  .comparison-table td:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--white);
+    z-index: 5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+  }
+  .comparison-table tr:nth-child(even) td:first-child {
+    background: var(--stone-50);
+  }
+}
+
+/* Style for stone tabs filter */
+.stone-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.stone-filter-btn {
+  background: var(--white);
+  border: 1px solid var(--stone-300);
+  color: var(--stone-700);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.stone-filter-btn.active,
+.stone-filter-btn:hover {
+  background: var(--amber-500);
+  color: var(--stone-950);
+  border-color: var(--amber-500);
+}
+.stone-detail-item.stone-detail-item-hidden {
+  display: none !important;
+}
+
+/* Accordion FAQs using details/summary */
+.faq-accordion {
+  max-width: 800px;
+  margin: 32px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-group-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--stone-900);
+  margin: 20px 0 8px;
+  border-left: 3px solid var(--amber-500);
+  padding-left: 10px;
+}
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--stone-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq-item summary {
+  padding: 16px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--stone-900);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary:after {
+  content: "+";
+  font-size: 18px;
+  color: var(--stone-500);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary {
+  background: var(--stone-50);
+  border-bottom: 1px solid var(--stone-200);
+}
+.faq-item[open] summary:after {
+  content: "−";
+}
+.faq-content {
+  padding: 16px 20px;
+  color: var(--stone-700);
+  font-size: 14px;
+  line-height: 1.6;
+  background: var(--white);
+}
+
+/* Floating Contact Widget */
+.floating-contact {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 99;
+}
+.float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  color: var(--white);
+  position: relative;
+}
+.float-btn:hover {
+  transform: scale(1.1);
+}
+.float-zalo {
+  background: #0068ff;
+  font-weight: 700;
+  font-size: 13px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.float-phone {
+  background: #4caf50;
+}
+
+/* Center layout for 5 cards in grid wrapper */
+.flex-center-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+.flex-center-wrap .card-item {
+  flex: 1 1 300px;
+  max-width: 360px;
+}
+
+/* Utility class replacements */
+.card-pad { padding: 24px; }
+.card-pad-sm { padding: 20px; }
+.m-top-32 { margin-top: 32px; }
+.text-stone-700 { color: var(--stone-700); }
+.font-size-95 { font-size: 0.95rem; }
+.line-height-18 { line-height: 1.8; }
+.list-style-margin { margin: 0 0 0 20px; }

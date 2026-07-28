@@ -56,7 +56,7 @@
 
   <main>
     <!-- Page Banner -->
-    <section class="hero hero-subpage" style="padding: 60px 0 80px;">
+    <section class="hero hero-subpage">
       <div class="hero-bg">
         <img src="images/stone_natural.webp" alt="Phân loại chất liệu đá" class="hero-img" />
         <div class="hero-overlay"></div>
@@ -77,27 +77,27 @@
           <p>Về kỹ thuật, <strong>đá hoa cương là granite tự nhiên</strong>. Nhưng trên thị trường Việt Nam, tên gọi này được dùng rộng rãi cho cả đá tự nhiên, đá nhân tạo và vật liệu giả đá.</p>
         </div>
 
-        <div class="grid grid-3" style="margin-top: 32px;">
-          <div class="card" style="padding: 24px;">
+        <div class="grid grid-3 m-top-32">
+          <div class="card card-pad">
             <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Đá tự nhiên</h3>
-            <ul style="margin: 0 0 0 20px; line-height: 1.8; color: var(--stone-700); font-size: 0.95rem;">
+            <ul class="list-style-margin line-height-18 text-stone-700 font-size-95">
               <li>Granite tự nhiên</li>
               <li>Marble tự nhiên</li>
               <li>Quartzite tự nhiên</li>
             </ul>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-pad">
             <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Đá nhân tạo</h3>
-            <ul style="margin: 0 0 0 20px; line-height: 1.8; color: var(--stone-700); font-size: 0.95rem;">
+            <ul class="list-style-margin line-height-18 text-stone-700 font-size-95">
               <li>Quartz nhân tạo (đá thạch anh)</li>
               <li>Marble nhân tạo</li>
               <li>Solid Surface</li>
               <li>Terrazzo composite</li>
             </ul>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-pad">
             <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Vật liệu giả đá</h3>
-            <ul style="margin: 0 0 0 20px; line-height: 1.8; color: var(--stone-700); font-size: 0.95rem;">
+            <ul class="list-style-margin line-height-18 text-stone-700 font-size-95">
               <li>Đá nung kết / Porcelain slab</li>
               <li>Đá nano kính, đá trắng sứ</li>
               <li>Tấm ceramic khổ lớn</li>
@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <p style="margin-top: 32px; text-align: center; color: var(--stone-700); font-size: 0.95rem;">
+        <p class="m-top-32 text-center text-stone-700 font-size-95">
           Khi mua hàng, đừng chỉ hỏi <em>"đá hoa cương loại nào"</em>, mà cần hỏi rõ: vật liệu gì, cốt đá là gì, có nhựa resin không, vân xuyên thân hay chỉ in mặt, bề mặt đánh bóng hay phủ men, có dùng ngoài trời / làm bếp được không.
         </p>
       </div>
@@ -120,11 +120,19 @@
           <p>Mỗi nhóm đá có ưu điểm, hạn chế và vị trí ứng dụng phù hợp riêng. Tham khảo chi tiết bên dưới để chọn được vật liệu tối ưu nhất.</p>
         </div>
 
+        <!-- Bộ lọc loại đá nhanh -->
+        <div class="stone-filter">
+          <button type="button" class="stone-filter-btn active" data-filter="all">Tất cả (9)</button>
+          <button type="button" class="stone-filter-btn" data-filter="tu-nhien">Đá tự nhiên (3)</button>
+          <button type="button" class="stone-filter-btn" data-filter="nhan-tao">Đá nhân tạo (3)</button>
+          <button type="button" class="stone-filter-btn" data-filter="gia-da">Vật liệu giả đá (3)</button>
+        </div>
+
         <div class="stone-details-list">
           <!-- 1. Granite Tự Nhiên -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="tu-nhien" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stone_natural.webp" alt="Đá granite tự nhiên" loading="lazy" />
+              <img src="images/stone_granite_natural.png" alt="Đá granite tự nhiên" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm A — Đá tự nhiên</span>
@@ -138,14 +146,14 @@
                 <li><strong>Granite vàng/đỏ/xanh/nâu:</strong> Vàng Bình Định, Vàng Brazil, Đỏ Ruby, Xanh Butterfly, Nâu Anh Quốc — thường dùng cho cổ điển, tâm linh, bàn thờ.</li>
                 <li><strong>Hạn chế:</strong> phong cách khá truyền thống; nền đen dễ lộ bụi, dấu tay; một số loại nhuộm màu kém chất lượng có thể xuống màu.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 2. Marble Tự Nhiên -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="tu-nhien" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stone_marble.webp" alt="Đá Marble cẩm thạch" loading="lazy" />
+              <img src="images/stone_marble_natural.png" alt="Đá Marble cẩm thạch" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm B — Đá tự nhiên</span>
@@ -158,14 +166,14 @@
                 <li><strong>Ưu điểm:</strong> vân đẹp tự nhiên, sang trọng, mỗi tấm là độc bản.</li>
                 <li><strong>Hạn chế:</strong> mềm (Mohs ~4), chanh/giấm có thể ăn mòn; cần chống thấm định kỳ; không phù hợp làm mặt bếp dùng hằng ngày.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 3. Quartzite Tự Nhiên -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="tu-nhien" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stone_natural.webp" alt="Đá Quartzite tự nhiên" loading="lazy" />
+              <img src="images/stone_quartzite_natural.png" alt="Đá Quartzite tự nhiên" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm C — Đá tự nhiên</span>
@@ -177,14 +185,14 @@
                 <li><strong>Ưu điểm:</strong> cứng, chống xước tốt hơn marble, vân tự nhiên đẹp.</li>
                 <li><strong>Hạn chế:</strong> giá cao, tấm đá biến thiên mạnh giữa các lô, yêu cầu đơn vị gia công có kinh nghiệm.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 4. Quartz Nhân Tạo -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="nhan-tao" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stone_artificial.webp" alt="Đá thạch anh nhân tạo Quartz" loading="lazy" />
+              <img src="images/stone_quartz_artificial.png" alt="Đá thạch anh nhân tạo Quartz" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm D — Đá nhân tạo</span>
@@ -196,14 +204,14 @@
                 <li><strong>Điểm mạnh:</strong> ít thấm, màu và vân ổn định, dễ vệ sinh, nhiều mẫu trắng vân marble.</li>
                 <li><strong>Lưu ý:</strong> có resin nên không đặt nồi vừa nhấc khỏi bếp trực tiếp lên bề mặt; một số dòng có thể ngả màu khi tiếp xúc tia UV lâu dài.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 5. Marble Nhân Tạo -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="nhan-tao" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stone_marble.webp" alt="Đá Marble nhân tạo" loading="lazy" />
+              <img src="images/stone_marble_artificial.png" alt="Đá Marble nhân tạo" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm E — Đá nhân tạo</span>
@@ -215,14 +223,14 @@
                 <li><strong>Ưu điểm:</strong> bề mặt đẹp, giá cạnh tranh, dễ sản xuất hàng loạt.</li>
                 <li><strong>Hạn chế:</strong> chất lượng biến động lớn; một số loại dễ xước, ố, bị hóa chất làm thay đổi bề mặt.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 6. Solid Surface -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="nhan-tao" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/lavabo.webp" alt="Đá Solid Surface" loading="lazy" />
+              <img src="images/stone_solid_surface.png" alt="Đá Solid Surface" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm F — Đá nhân tạo</span>
@@ -234,14 +242,14 @@
                 <li><strong>Ưu điểm:</strong> ghép nối gần như vô hình, uốn nhiệt được, đúc lavabo liền khối đẹp.</li>
                 <li><strong>Hạn chế:</strong> mềm hơn quartz, chịu nhiệt trực tiếp kém hơn — mặt bếp phải sử dụng đúng cách.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 7. Đá nung kết / Porcelain slab -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="gia-da" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/kitchen.webp" alt="Đá nung kết và porcelain slab" loading="lazy" />
+              <img src="images/stone_sintered.png" alt="Đá nung kết và porcelain slab" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm G — Vật liệu giả đá</span>
@@ -256,14 +264,14 @@
                 <li><strong>Ưu điểm:</strong> vân đẹp mô phỏng marble đắt tiền, độ bóng cao, khổ lớn ít ron, tấm mỏng giảm trọng lượng, giá phổ thông cạnh tranh.</li>
                 <li><strong>Hạn chế:</strong> tấm mỏng dễ mẻ cạnh khi vận chuyển/gia công; khoét bếp, khoét chậu sai kỹ thuật dễ nứt từ góc; cạnh cắt có thể khác màu mặt nếu vân chỉ in trên bề mặt; men bóng chất lượng thấp có thể xước; sản phẩm giá rẻ có thể chỉ là gạch porcelain khổ lớn bán dưới tên "đá nung kết".</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 8. Đá trắng sứ / Nano kính -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center; margin-bottom: 60px;">
+          <div class="grid grid-2 stone-detail-item" data-group="gia-da" style="align-items: center; margin-bottom: 60px;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/lavabo.webp" alt="Đá trắng sứ và đá nano kính" loading="lazy" />
+              <img src="images/stone_porcelain_white.png" alt="Đá trắng sứ và đá nano kính" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm H — Vật liệu giả đá</span>
@@ -276,14 +284,14 @@
                 <li><strong>Ưu điểm chung:</strong> trắng sáng, bóng, giá dễ tiếp cận hơn quartz cao cấp, dễ phối tủ bếp, tạo cảm giác sạch.</li>
                 <li><strong>Rủi ro:</strong> một số loại giá thấp giòn và dễ mẻ cạnh; vân có thể chỉ nằm trên lớp mặt; bo cạnh/ghép cạnh dày sẽ lộ màu cốt; cần kiểm tra khả năng chịu sốc nhiệt.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
 
           <!-- 9. Terrazzo Nhân Tạo -->
-          <div class="grid grid-2 stone-detail-item" style="align-items: center;">
+          <div class="grid grid-2 stone-detail-item" data-group="gia-da" style="align-items: center;">
             <div class="img-wrap aspect-square" style="border-radius: var(--radius-lg);">
-              <img src="images/stairs.webp" alt="Đá Terrazzo nhân tạo" loading="lazy" />
+              <img src="images/stone_terrazzo.png" alt="Đá Terrazzo nhân tạo" loading="lazy" />
             </div>
             <div>
               <span class="eyebrow">Nhóm I — Vật liệu composite</span>
@@ -295,9 +303,16 @@
                 <li><strong>Terrazzo resin:</strong> màu sắc phong phú, bề mặt mịn hơn.</li>
                 <li><strong>Terrazzo xi măng:</strong> phù hợp sàn và phong cách thô mộc, thường phải chống thấm.</li>
               </ul>
-              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Gửi mẫu nhận báo giá Zalo →</a>
+              <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="card-link">Xem mẫu &amp; nhận báo giá Zalo →</a>
             </div>
           </div>
+        </div>
+
+        <!-- Banner kêu gọi hành động tư vấn Zalo -->
+        <div class="card card-dark" style="padding: 40px; text-align: center; margin-top: 40px; border: none;">
+          <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 12px;">Bạn đã chọn được chất liệu ốp lát phù hợp?</h3>
+          <p style="color: var(--stone-300); margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">Gửi hình ảnh mẫu hoặc kích thước sơ bộ qua Zalo để kỹ thuật viên của Xưởng đá Ngọc Cẩn khảo sát, đo đạc và báo giá trọn gói miễn phí.</p>
+          <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Gửi Mẫu Qua Zalo Ngay</a>
         </div>
       </div>
     </section>
@@ -587,31 +602,31 @@
           <p>Đừng dựa vào tên gọi của người bán. Hãy quan sát cạnh tấm đá — đó là dấu hiệu trung thực nhất để biết bạn đang cầm loại vật liệu nào.</p>
         </div>
 
-        <div class="grid grid-3" style="margin-top: 32px;">
-          <div class="card" style="padding: 24px;">
+        <div class="flex-center-wrap">
+          <div class="card card-item card-pad">
             <h3 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--stone-900);">Trường hợp 1</h3>
             <p style="font-weight: 600; margin-bottom: 8px;">Mặt bóng có vân nhưng cạnh là một màu cốt khác</p>
-            <p style="color: var(--stone-700); font-size: 0.95rem; line-height: 1.7;">Khả năng cao là: <strong>Porcelain slab phủ men, gạch khổ lớn, đá nung kết vân mặt, hoặc tấm ceramic giả đá</strong>.</p>
+            <p class="text-stone-700 font-size-95 line-height-17">Khả năng cao là: <strong>Porcelain slab phủ men, gạch khổ lớn, đá nung kết vân mặt, hoặc tấm ceramic giả đá</strong>.</p>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-item card-pad">
             <h3 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--stone-900);">Trường hợp 2</h3>
             <p style="font-weight: 600; margin-bottom: 8px;">Hạt nhỏ xuất hiện cả mặt và cạnh</p>
-            <p style="color: var(--stone-700); font-size: 0.95rem; line-height: 1.7;">Khả năng cao là: <strong>Quartz nhân tạo, granite tự nhiên, terrazzo, hoặc composite đá</strong>.</p>
+            <p class="text-stone-700 font-size-95 line-height-17">Khả năng cao là: <strong>Quartz nhân tạo, granite tự nhiên, terrazzo, hoặc composite đá</strong>.</p>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-item card-pad">
             <h3 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--stone-900);">Trường hợp 3</h3>
             <p style="font-weight: 600; margin-bottom: 8px;">Trắng bóng gần giống kính</p>
-            <p style="color: var(--stone-700); font-size: 0.95rem; line-height: 1.7;">Khả năng cao là: <strong>Đá nano kính, crystallized glass, hoặc trắng sứ nhân tạo</strong>.</p>
+            <p class="text-stone-700 font-size-95 line-height-17">Khả năng cao là: <strong>Đá nano kính, crystallized glass, hoặc trắng sứ nhân tạo</strong>.</p>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-item card-pad">
             <h3 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--stone-900);">Trường hợp 4</h3>
             <p style="font-weight: 600; margin-bottom: 8px;">Có thể uốn cong, ghép gần như mất đường nối</p>
-            <p style="color: var(--stone-700); font-size: 0.95rem; line-height: 1.7;">Khả năng rất cao là <strong>Solid Surface</strong> — đây là ưu điểm vượt trội chỉ nhóm này có.</p>
+            <p class="text-stone-700 font-size-95 line-height-17">Khả năng rất cao là <strong>Solid Surface</strong> — đây là ưu điểm vượt trội chỉ nhóm này có.</p>
           </div>
-          <div class="card" style="padding: 24px;">
+          <div class="card card-item card-pad">
             <h3 style="font-size: 1.05rem; margin-bottom: 12px; color: var(--stone-900);">Trường hợp 5</h3>
             <p style="font-weight: 600; margin-bottom: 8px;">Vân không lặp lại, mặt sau cũng có khoáng tự nhiên</p>
-            <p style="color: var(--stone-700); font-size: 0.95rem; line-height: 1.7;">Khả năng cao là <strong>granite, marble hoặc quartzite tự nhiên</strong>.</p>
+            <p class="text-stone-700 font-size-95 line-height-17">Khả năng cao là <strong>granite, marble hoặc quartzite tự nhiên</strong>.</p>
           </div>
         </div>
       </div>
@@ -623,25 +638,105 @@
         <div class="section-heading text-center">
           <span class="eyebrow">Trước khi đặt hàng</span>
           <h2>15 Câu Hỏi Cần Hỏi Nhà Cung Cấp</h2>
-          <p>Trước khi ký đơn, yêu cầu người bán trả lời bằng văn bản các câu hỏi dưới đây để tránh rủi ro về chất lượng và chi phí phát sinh.</p>
+          <p>Trước khi ký đơn, yêu cầu người bán trả lời các câu hỏi dưới đây để tránh rủi ro về chất lượng và chi phí phát sinh.</p>
         </div>
 
-        <div class="grid grid-3" style="margin-top: 32px;">
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>1.</strong> Tên kỹ thuật của vật liệu là gì?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>2.</strong> Đây là granite, quartz, Solid Surface, porcelain hay đá nung kết?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>3.</strong> Vân xuyên thân hay chỉ in trên bề mặt?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>4.</strong> Bề mặt đánh bóng hay phủ men?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>5.</strong> Độ dày thực tế của tấm là bao nhiêu?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>6.</strong> Có dùng được cho mặt bếp không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>7.</strong> Có chịu được nồi nóng trực tiếp không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>8.</strong> Có dùng ngoài trời và chịu UV không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>9.</strong> Có datasheet hoặc kết quả thử nghiệm không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>10.</strong> Bảo hành nứt, ố, cong, bong bề mặt thế nào?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>11.</strong> Giá đã gồm khoét chậu, khoét bếp, bo cạnh, lắp đặt chưa?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>12.</strong> Sau khi cắt, tấm có lộ xương khác màu không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>13.</strong> Vết mẻ cạnh có sửa được không?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>14.</strong> Khung đỡ bàn dùng vật liệu gì, khoảng cách bao nhiêu?</p></div>
-          <div class="card" style="padding: 20px;"><p style="margin: 0;"><strong>15.</strong> Có công trình đã sử dụng từ 2 năm trở lên để tham khảo không?</p></div>
+        <div class="faq-accordion">
+          <div class="faq-group-title">Chất liệu &amp; Đặc tính kỹ thuật</div>
+          <details class="faq-item" open>
+            <summary>1. Tên kỹ thuật chính xác của vật liệu này là gì?</summary>
+            <div class="faq-content">
+              Yêu cầu nhà cung cấp làm rõ bản chất đá (granite, marble, quartz hay porcelain/đá nung kết) thay vì chỉ gọi tên thương mại để biết chính xác đặc điểm vật lý của sản phẩm.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>2. Đây là đá tự nhiên, đá nhân tạo hay vật liệu giả đá?</summary>
+            <div class="faq-content">
+              Giúp bạn xác định rõ cấu tạo hạt, mức độ đồng đều của vân đá và các thuộc tính sử dụng thực tế của cốt đá.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>3. Hoa văn/Đường vân là xuyên thân (full-body) hay chỉ in trên bề mặt?</summary>
+            <div class="faq-content">
+              Đá vân xuyên thân khi bo cạnh hoặc cắt mép sẽ giữ được thẩm mỹ đồng bộ. Đá chỉ in mặt khi cắt sẽ lộ ra cốt đá thô khác màu.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>4. Bề mặt là đánh bóng trực tiếp trên cốt đá hay phủ lớp men bóng?</summary>
+            <div class="faq-content">
+              Bề mặt cốt đá đánh bóng cơ học bền vững hơn và có thể đánh bóng phục hồi khi bị trầy xước. Bề mặt phủ men bóng mỏng dễ xước và khó sửa chữa hơn.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>5. Độ dày thực tế của tấm đá là bao nhiêu?</summary>
+            <div class="faq-content">
+              Độ dày quyết định khả năng chịu lực. Mặt bếp thường dùng đá dày 18-20mm. Đá nung kết mỏng (9mm, 12mm) làm bếp cần có tấm lót gia cường chịu lực bên dưới.
+            </div>
+          </details>
+
+          <div class="faq-group-title">Khả năng ứng dụng &amp; Sử dụng</div>
+          <details class="faq-item">
+            <summary>6. Có dùng được cho mặt bàn bếp nấu ăn hằng ngày không?</summary>
+            <div class="faq-content">
+              Mặt bếp cần chịu lực chặt thái, chịu nhiệt độ bếp nấu, chống thấm dầu mỡ, nước tương, nước mắm cực tốt để không bị ố màu.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>7. Có chịu được sốc nhiệt và nồi chảo nóng vừa nấu xong đặt lên không?</summary>
+            <div class="faq-content">
+              Các dòng đá nhân tạo chứa nhựa resin (như quartz, marble nhân tạo) có thể bị ố vàng hoặc nứt nếu gặp nhiệt độ cao đột ngột. Nên dùng tấm lót nồi.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>8. Có dùng ngoài trời, chịu được nắng mưa và tia cực tím (UV) không?</summary>
+            <div class="faq-content">
+              Tia UV từ ánh nắng sẽ làm lão hóa nhựa resin trong đá nhân tạo, gây biến màu, nứt giòn. Với tam cấp hoặc mặt tiền ngoài trời, nên chọn Granite tự nhiên hoặc đá nung kết chuyên dụng.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>9. Có tài liệu chứng nhận thông số kỹ thuật hoặc kết quả thử nghiệm chất lượng không?</summary>
+            <div class="faq-content">
+              Đặc biệt cần thiết khi mua đá nung kết hoặc quartz nhập khẩu để kiểm chứng các chỉ số chống thấm, chống xước cơ học chính xác.
+            </div>
+          </details>
+
+          <div class="faq-group-title">Gia công, Lắp đặt &amp; Bảo hành</div>
+          <details class="faq-item">
+            <summary>10. Chính sách bảo hành nứt, ố màu, cong vênh và bong tróc bề mặt cụ thể thế nào?</summary>
+            <div class="faq-content">
+              Làm rõ thời gian bảo hành và các điều kiện bảo hành (lỗi do thi công hay lỗi do người dùng vận hành sai cách) để ký cam kết rõ ràng.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>11. Đơn giá báo đã bao gồm chi phí khoét chậu, khoét bếp, bo cạnh và lắp đặt chưa?</summary>
+            <div class="faq-content">
+              Chi phí mài bo cạnh và khoét lỗ lắp chậu rửa âm/dương chiếm tỷ trọng khá lớn. Hỏi rõ để tránh phát sinh chi phí phụ sau khi hoàn thành.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>12. Sau khi cắt, mài cạnh hoặc khoét lỗ thì mép đá có lộ xương cốt khác màu không?</summary>
+            <div class="faq-content">
+              Đây là đặc trưng của gạch/porcelain phủ men. Nếu mép cắt bị lộ cốt khác màu, xưởng cần mài vát hoặc dán ghép cạnh 45 độ tinh tế để giấu cốt đá.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>13. Nếu không may bị mẻ cạnh hoặc nứt nhẹ trong quá trình sử dụng thì có sửa được không?</summary>
+            <div class="faq-content">
+              Solid Surface có khả năng vá không tì vết. Đá tự nhiên có thể dùng keo epoxy chuyên dụng xử lý. Đá nung kết và porcelain phủ men cực kỳ khó sửa nếu mẻ cạnh lớn.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>14. Khung và lớp xương đỡ chịu lực bên dưới mặt đá dùng vật liệu gì, khoảng cách gia cố thế nào?</summary>
+            <div class="faq-content">
+              Mặt bếp hay bàn ăn cần hệ xương đỡ bằng sắt hộp hoặc gỗ/MDF chống ẩm gia cường lực bên dưới để triệt tiêu độ rung và phân bổ lực đều, tránh nứt mặt đá khi băm chặt lực mạnh.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>15. Có công trình thực tế đã sử dụng loại đá này trên 2 năm để tham khảo không?</summary>
+            <div class="faq-content">
+              Xem thực tế độ bền màu, giữ độ bóng và mức độ xuống cấp theo thời gian giúp đánh giá khách quan nhất chất lượng nguyên liệu.
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -789,6 +884,16 @@
     </div>
     <p class="footer-copy">© <span id="year"></span> Xưởng đá Ngọc Cẩn. Bản quyền được bảo lưu.</p>
   </footer>
+
+  <!-- Floating Contact Widget -->
+  <div class="floating-contact">
+    <a href="https://zalo.me/0905035789" target="_blank" rel="noopener noreferrer" class="float-btn float-zalo" title="Chat Zalo">Zalo</a>
+    <a href="tel:0905035789" class="float-btn float-phone" title="Gọi điện">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px;">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    </a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
