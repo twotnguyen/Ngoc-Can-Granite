@@ -1180,3 +1180,115 @@ h2 {
 .font-size-95 { font-size: 0.95rem; }
 .line-height-18 { line-height: 1.8; }
 .list-style-margin { margin: 0 0 0 20px; }
+
+/* Nested details styling inside stone cards */
+.stone-detail-item details {
+  margin-top: 16px;
+  border: 1px solid var(--stone-200);
+  border-radius: 8px;
+  width: 100%;
+}
+.stone-detail-item details summary {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--stone-900);
+  background: var(--stone-50);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stone-detail-item details summary:after {
+  content: "▼";
+  font-size: 10px;
+  color: var(--stone-500);
+}
+.stone-detail-item details[open] summary:after {
+  content: "▲";
+}
+.nested-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 0;
+}
+.nested-detail-table th, .nested-detail-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--stone-100);
+  text-align: left;
+}
+.nested-detail-table th {
+  background: var(--stone-100);
+  color: var(--stone-800);
+  font-weight: 700;
+}
+.nested-detail-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Surface Finishes Section */
+.finish-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 32px;
+}
+.finish-card {
+  background: var(--white);
+  border: 1px solid var(--stone-200);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.finish-card:hover {
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+.finish-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--stone-900);
+  margin-bottom: 8px;
+}
+.finish-card p {
+  font-size: 0.9rem;
+  color: var(--stone-600);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Trend Cards Section */
+.trend-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .trend-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.trend-card {
+  background: var(--white);
+  border: 1px solid var(--stone-200);
+  border-left: 4px solid var(--amber-500);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+.trend-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--stone-900);
+  margin-bottom: 10px;
+}
+.trend-card p {
+  font-size: 0.95rem;
+  color: var(--stone-700);
+  line-height: 1.6;
+  margin: 0;
+}
