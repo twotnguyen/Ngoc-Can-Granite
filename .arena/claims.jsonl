@@ -1,0 +1,3 @@
+{"id":"C1","status":"observed","confidence":"high","area":"UX","claim":"Catalog imagery is not reliably product-specific","evidence":["loai-da.html:135","loai-da.html:153","loai-da.html:171","loai-da.html:189","loai-da.html:207","loai-da.html:225","loai-da.html:125-128"]}
+{"id":"C2","status":"observed_omission","confidence":"high","area":"SEO","claim":"Technical and local SEO signals are incomplete","evidence":["index.html:6-18","loai-da.html:1274","loai-da.html:1295"]}
+{"id":"C3","status":"observed_omission","confidence":"high","area":"accessibility","claim":"Gallery/lightbox interaction is incomplete for accessibility","evidence":["san-pham.html:212-220","js/gallery.js:39-50","san-pham.html:76-80","css/styles.css:1555-1560"]}
